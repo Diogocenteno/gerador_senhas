@@ -1,66 +1,43 @@
 🔐 Gerador de Senhas com Interface Gráfica
 Aplicativo Python com GUI em Tkinter para geração de senhas seguras. Suporta níveis predefinidos, personalização completa, múltiplas senhas e criptografia com cryptography. Ideal para quem quer segurança sem complicação.
 
-🚀 Funcionalidades
-Geração por Nível:
+<img width="781" height="863" alt="Captura de tela 2025-09-03 114933" src="https://github.com/user-attachments/assets/1dccd9d3-dcb8-4a28-aa2a-fb9cbc235de3" />
 
-Básico (6 letras)
 
-Médio (8 letras + números)
+Este commit inicial introduz uma aplicação de desktop completa para a geração e gerenciamento seguro de senhas, além de funcionalidades para criptografia e descriptografia de arquivos.
 
-Avançado (12 com especiais)
+A interface gráfica, desenvolvida com Tkinter e aprimorada com ttkthemes, oferece uma experiência de usuário intuitiva e personalizável.
 
-Muito Avançado (20 caracteres)
+Principais funcionalidades implementadas:
 
-![Captura de tela 2025-05-27 094818](https://github.com/user-attachments/assets/eaf5bd90-f039-40ec-90bc-3b5524ca6b4d)
+Geração de Senhas:
 
-Geração Customizável:
+Geração baseada em níveis de complexidade pré-definidos (Básico a Especialista).
 
-Define o tamanho
+Opção de senha customizável, permitindo ao usuário definir tamanho, conjunto de caracteres (letras, números, especiais) e palavras-chave.
 
-Adiciona números/caracteres especiais
+Capacidade de gerar múltiplas senhas em lote.
 
-Sem repetição de caracteres
+Avaliação da força de cada senha gerada.
 
-Adição de palavras específicas
+Criptografia e Gerenciamento:
 
-Outros Recursos:
+Salva listas de senhas de forma segura, utilizando criptografia simétrica (Fernet).
 
-Avaliação de força da senha
+Permite salvar as senhas em texto simples (com aviso de segurança).
 
-Geração em lote
+Ferramenta dedicada para descriptografar arquivos de senhas previamente salvos, exigindo o arquivo de chave correspondente.
 
-Salvamento em .txt (criptografado ou simples)
+Módulo para criptografar e descriptografar qualquer tipo de arquivo, gerando um arquivo de dados (.enc) e um de chave (.key).
 
-Cópia automática para clipboard
+Interface e Usabilidade:
 
-Interface moderna com tema ttkthemes
+Interface organizada em abas para separar as diferentes funcionalidades.
 
-🛠️ Tecnologias Usadas
-Tkinter + ttkthemes – GUI
+Suporte a múltiplos temas visuais, com a escolha do usuário sendo salva em um arquivo de configuração para persistência.
 
-random – Geração aleatória
+Lista dinâmica para exibir as senhas geradas na sessão atual.
 
-cryptography.fernet – Criptografia simétrica
+Ações rápidas como "Copiar para a área de transferência", "Salvar" e "Limpar lista".
 
-os, filedialog, messagebox – utilidades do sistema
-
-💻 Como Executar
-Instale as dependências:
-
-pip install cryptography ttkthemes
-Rode o script:
-
-python gerador_senhas.py
-📁 Estrutura de Saída
-Arquivo .txt com senhas criptografadas (contém a chave de descriptografia).
-
-Arquivo simples salvo na Área de Trabalho (sem criptografia).
-
-⚠️ Observações
-A chave de criptografia não é armazenada – se perder, já era.
-
-A criptografia é opcional e só ocorre ao salvar com o botão "Salvar Senhas".
-
-🧠 Autor
-Script criado para fins educacionais e de produtividade pessoal. Faça bom uso e não reutilize senhas fracas.
+Janela redimensionável com barra de rolagem para garantir a usabilidade em diferentes tamanhos de tela.
